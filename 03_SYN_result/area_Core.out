@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : Core
+Version: U-2022.12
+Date   : Fri May 19 01:54:07 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/userb09/b09081/NTUEE_IC_Design_lab/Lab3/SYN/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                          356
+Number of nets:                          6509
+Number of cells:                         5335
+Number of combinational cells:           4910
+Number of sequential cells:               425
+Number of macros/black boxes:               0
+Number of buf/inv:                        979
+Number of references:                      50
+
+Combinational area:             122473.411539
+Buf/Inv area:                     9883.742270
+Noncombinational area:           25235.885036
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                147709.296576
+Total area:                 undefined
+1

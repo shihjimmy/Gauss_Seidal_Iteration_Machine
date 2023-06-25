@@ -1,0 +1,123 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Top
+Version: U-2022.12
+Date   : Fri May 26 08:54:06 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: GSIM/iteration_cell/core/b_multiply_r_reg[9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: GSIM/iteration_cell/core/x_next_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top                enG100K               fsa0m_a_generic_core_tt1p8v25c
+  Core               enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  GSIM/iteration_cell/core/b_multiply_r_reg[9]/CK (QDFFRBN)
+                                                          0.00 #     0.50 r
+  GSIM/iteration_cell/core/b_multiply_r_reg[9]/Q (QDFFRBN)
+                                                          0.79       1.29 r
+  GSIM/iteration_cell/core/U181/O (INV1S)                 0.56       1.85 f
+  GSIM/iteration_cell/core/U500/O (INV1S)                 0.91       2.76 r
+  GSIM/iteration_cell/core/U501/O (XOR2HS)                0.06       2.82 f
+  GSIM/iteration_cell/core/U503/O (ND2)                   0.54       3.36 r
+  GSIM/iteration_cell/core/U150/O (BUF1)                  0.55       3.91 r
+  GSIM/iteration_cell/core/U712/O (OAI22S)                0.15       4.06 f
+  GSIM/iteration_cell/core/U723/S (FA1S)                  0.57       4.63 r
+  GSIM/iteration_cell/core/U721/S (FA1S)                  0.43       5.06 f
+  GSIM/iteration_cell/core/U745/S (FA1S)                  0.55       5.62 r
+  GSIM/iteration_cell/core/U746/S (FA1S)                  0.43       6.05 f
+  GSIM/iteration_cell/core/U714/S (FA1S)                  0.60       6.65 r
+  GSIM/iteration_cell/core/U1043/O (ND2S)                 0.22       6.86 f
+  GSIM/iteration_cell/core/U1045/O (OAI12HS)              0.30       7.16 r
+  GSIM/iteration_cell/core/U1048/O (AOI12HS)              0.12       7.28 f
+  GSIM/iteration_cell/core/U1049/O (OAI12HS)              0.14       7.42 r
+  GSIM/iteration_cell/core/U1132/O (AOI12HS)              0.17       7.59 f
+  GSIM/iteration_cell/core/U1176/O (OAI12HS)              0.31       7.90 r
+  GSIM/iteration_cell/core/U1222/O (AOI12HS)              0.17       8.07 f
+  GSIM/iteration_cell/core/U1268/O (OAI12HS)              0.31       8.38 r
+  GSIM/iteration_cell/core/U1319/O (AOI12HS)              0.17       8.55 f
+  GSIM/iteration_cell/core/U1367/O (OAI12HS)              0.31       8.86 r
+  GSIM/iteration_cell/core/U1421/O (AOI12HS)              0.17       9.04 f
+  GSIM/iteration_cell/core/U218/O (OAI12HS)               0.31       9.35 r
+  GSIM/iteration_cell/core/U42/O (AOI12HS)                0.19       9.54 f
+  GSIM/iteration_cell/core/U1573/O (OAI12H)               0.24       9.79 r
+  GSIM/iteration_cell/core/U1625/O (AOI12H)               0.13       9.91 f
+  GSIM/iteration_cell/core/U1676/O (OAI12H)               0.22      10.13 r
+  GSIM/iteration_cell/core/U1728/O (AOI12H)               0.12      10.25 f
+  GSIM/iteration_cell/core/U1778/O (OAI12H)               0.20      10.45 r
+  GSIM/iteration_cell/core/U217/O (AOI12HS)               0.16      10.61 f
+  GSIM/iteration_cell/core/U17/O (OAI12HS)                0.33      10.94 r
+  GSIM/iteration_cell/core/U1928/O (AOI12H)               0.14      11.08 f
+  GSIM/iteration_cell/core/U1977/O (OAI12H)               0.23      11.31 r
+  GSIM/iteration_cell/core/U2028/O (AOI12H)               0.12      11.43 f
+  GSIM/iteration_cell/core/U2077/O (OAI12H)               0.22      11.65 r
+  GSIM/iteration_cell/core/U2128/O (AOI12H)               0.12      11.77 f
+  GSIM/iteration_cell/core/U2177/O (OAI12H)               0.20      11.97 r
+  GSIM/iteration_cell/core/U216/O (AOI12HS)               0.16      12.13 f
+  GSIM/iteration_cell/core/U16/O (OAI12HS)                0.33      12.46 r
+  GSIM/iteration_cell/core/U2310/O (AOI12H)               0.14      12.60 f
+  GSIM/iteration_cell/core/U2352/O (OAI12H)               0.23      12.83 r
+  GSIM/iteration_cell/core/U2392/O (AOI12H)               0.12      12.95 f
+  GSIM/iteration_cell/core/U2431/O (OAI12H)               0.20      13.15 r
+  GSIM/iteration_cell/core/U26/O (AOI12HS)                0.16      13.31 f
+  GSIM/iteration_cell/core/U215/O (OAI12HS)               0.33      13.64 r
+  GSIM/iteration_cell/core/U25/O (AOI12H)                 0.16      13.80 f
+  GSIM/iteration_cell/core/U2568/O (OAI12HP)              0.20      14.00 r
+  GSIM/iteration_cell/core/U2598/O (AOI12HP)              0.10      14.10 f
+  GSIM/iteration_cell/core/U2619/O (OAI12HP)              0.18      14.28 r
+  GSIM/iteration_cell/core/U2634/O (AOI12HP)              0.10      14.37 f
+  GSIM/iteration_cell/core/U2644/O (OAI12HP)              0.16      14.53 r
+  GSIM/iteration_cell/core/U24/O (AOI12H)                 0.11      14.64 f
+  GSIM/iteration_cell/core/U214/O (OAI12HS)               0.31      14.95 r
+  GSIM/iteration_cell/core/U2997/O (AOI12H)               0.11      15.06 f
+  GSIM/iteration_cell/core/U3018/O (OAI12H)               0.17      15.24 r
+  GSIM/iteration_cell/core/U3037/O (AOI12H)               0.09      15.33 f
+  GSIM/iteration_cell/core/U3055/O (OAI12H)               0.16      15.49 r
+  GSIM/iteration_cell/core/U3071/O (AOI12H)               0.09      15.58 f
+  GSIM/iteration_cell/core/U3086/O (OAI12H)               0.16      15.74 r
+  GSIM/iteration_cell/core/U3099/O (AOI12H)               0.09      15.83 f
+  GSIM/iteration_cell/core/U3111/O (OAI12H)               0.16      15.99 r
+  GSIM/iteration_cell/core/U3120/O (AOI12H)               0.09      16.09 f
+  GSIM/iteration_cell/core/U3126/O (OAI12H)               0.14      16.23 r
+  GSIM/iteration_cell/core/U3131/O (AO12T)                0.16      16.39 r
+  GSIM/iteration_cell/core/U3132/CO (FA1)                 0.19      16.58 r
+  GSIM/iteration_cell/core/U15/O (AOI12HS)                0.12      16.70 f
+  GSIM/iteration_cell/core/U3136/O (AN2T)                 0.20      16.90 f
+  GSIM/iteration_cell/core/U213/O (INV1S)                 0.26      17.16 r
+  GSIM/iteration_cell/core/U219/O (INV1S)                 0.66      17.82 f
+  GSIM/iteration_cell/core/U3137/O (AO222)                0.51      18.32 f
+  GSIM/iteration_cell/core/x_next_reg[1]/D (QDFFRBN)      0.00      18.32 f
+  data arrival time                                                 18.32
+
+  clock clk (rise edge)                                  18.00      18.00
+  clock network delay (ideal)                             0.50      18.50
+  clock uncertainty                                      -0.10      18.40
+  GSIM/iteration_cell/core/x_next_reg[1]/CK (QDFFRBN)     0.00      18.40 r
+  library setup time                                     -0.07      18.33
+  data required time                                                18.33
+  --------------------------------------------------------------------------
+  data required time                                                18.33
+  data arrival time                                                -18.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
