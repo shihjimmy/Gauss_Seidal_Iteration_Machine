@@ -3,7 +3,7 @@
 * Final Project from NTUEE IC Design laboratory
 * CHIP is taped out by TSMC  
 * (02_SYN and 04_APR are files for EDA tools, and they are not uploaded)
-* ### Please check out our Report.pdf for detailed information !!  
+* ### Please check out Report.pdf for detailed information !!
 ## CHIP
 ![](pic_CHIP.png)
 ## Reciprocal
