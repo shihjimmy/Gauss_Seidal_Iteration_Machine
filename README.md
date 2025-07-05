@@ -12,3 +12,5 @@
 ![](pic_Core.png)  
 ## Final layout
 ![](./05_APR_result/pic_APR.png)
+## Tapeout
+![](.pic_tapeout.png)
